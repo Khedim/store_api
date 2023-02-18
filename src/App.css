@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +32,35 @@
     transform: rotate(360deg);
   }
 }
+
+.slider-img {
+  height: calc(100vh - 56px);
+}
+
+@media (min-width:768px) {
+  .card-detail {
+      display: flex;
+      flex-direction: row;
+      /* flex-wrap: wrap; */
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+  }
+  .card-img-top-detail{
+      height: 590px;
+      width: 50%;
+  }
+  .card-body-detail {
+      height: 590px;
+      width: 50%;
+      text-align: left;
+  }
+}
+
+.delete-item {
+  visibility: hidden;
+}
+.tr-item:hover .delete-item{
+  visibility: visible;
+}
+
